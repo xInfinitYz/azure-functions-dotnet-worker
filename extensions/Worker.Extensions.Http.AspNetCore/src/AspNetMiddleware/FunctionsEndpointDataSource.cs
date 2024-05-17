@@ -96,6 +96,7 @@ namespace Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore.AspNetMidd
 
                 if (functionBinding.Type.Equals("httpTrigger", StringComparison.OrdinalIgnoreCase))
                 {
+                    //start look here
                     string routeSuffix = functionBinding.Route ?? functionName;
                     string route = $"{routePrefix}/{routeSuffix}";
 
